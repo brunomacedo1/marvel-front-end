@@ -1,0 +1,53 @@
+
+/* Navbar */
+.nav-bar{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* Head */
+.head{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.title{
+  font-family: "Gilroy-Semibold";
+  font-size: 14px;
+  color: #B7B7C8;
+}
+
+.subtitle{
+  font-family: "Gilroy-Heavy";
+  font-size: 32px;
+  color: #313140;
+}
+
+
+/* Section Title/See-all */
+
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 76px;
+  margin-left: 76px;
+}
+
+.see-all{
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  color: #B7B7C8;
+}
+
+.section-title{
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  color: #F2264B;
+}

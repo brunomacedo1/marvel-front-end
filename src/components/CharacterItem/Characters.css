@@ -1,0 +1,30 @@
+.card {
+  flex: none;
+  margin: 5px;
+}
+
+.personagem-wrapper {
+  display: flex;
+  /* width: 100vw  ; */
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.text-name {
+  color: #FFFF;
+  font-family: "Gilroy-Heavy";
+  font-size: 20px;
+}
+
+.text-ego{
+  color: #F8F8F8;
+  font-family: "Gilroy-medium";
+  font-size: 10px;
+}
+
+img{
+  border-radius: 50px;
+}
+
+
+

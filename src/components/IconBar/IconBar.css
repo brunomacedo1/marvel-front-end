@@ -1,0 +1,34 @@
+.categories{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+}
+
+.circle{
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  align-content: "center";
+  justify-content: "center";
+  align-items: "center";
+  background-color: #B7B7C8;
+}
+
+.circle.hero{
+  background-image:linear-gradient(#005BEA, #00C6FB);
+}
+.circle.villain{
+  background-image:linear-gradient(#ED1D24, #ED1F69);
+}
+.circle.antihero{
+  background-image:linear-gradient(#B224eF, #7579FF) ;
+}
+.circle-alien{
+  background-image:linear-gradient(#0BA360, #3CBA92) ;
+}
+.circle.human{
+  background-image:linear-gradient(#FF7EB3, #FF758C) ;
+}
+
