@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.details-container{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+}
+
+.alterEgo{
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.name{
+  font-family: "Gilroy-Heavy";
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.caracteristics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movies{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: auto;
+  align-content: center;
+}
+
+.movies img{
+  margin: 5px;
+  border-radius: 30px;
+}
+
+
+.caracteristics p{
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+
+.details-container h1{
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  color: #FFFFFF;
+  
+}
+
+.habilidades h1{
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.habilidades h1{
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.habilidades p{
+  font-family: "Gilroy-Regular";
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.85;
+}
+

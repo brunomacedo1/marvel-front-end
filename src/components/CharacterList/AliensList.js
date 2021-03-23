@@ -1,11 +1,11 @@
 import React from 'react';
 import AliensItem from '../CharacterItem/AliensItem'
 
-const AliensList = ({aliens}) => {
+const AliensList = ({aliens, cardSelected}) => {
 
   const aliensList = aliens.map((alien) => {
     return(
-      <AliensItem key={alien.name} alien={alien}/>
+      <AliensItem key={alien.name} alien={alien} cardSelected={cardSelected}/>
     )
   });
 

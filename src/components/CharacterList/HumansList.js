@@ -1,11 +1,11 @@
 import React from 'react';
 import HumansItem from '../CharacterItem/HumansItem';
 
-const HumansList = ({humans}) => {
+const HumansList = ({humans, cardSelected}) => {
 
   const humansList = humans.map((human) => {
     return(
-      <HumansItem key={human.name} human={human}/>
+      <HumansItem key={human.name} human={human} cardSelected={cardSelected}/>
     )
   })
 

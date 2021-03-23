@@ -1,11 +1,11 @@
 import React from 'react';
 import AntiHeroesItem from '../CharacterItem/AntiHeroesItem'
 
-const AntiHeroesList = ({antiheroes}) => {
+const AntiHeroesList = ({antiheroes, cardSelected}) => {
 
   const antiheroesList = antiheroes.map((antiheroe) => {
     return(
-      <AntiHeroesItem key={antiheroe.name} antiheroe={antiheroe}/>
+      <AntiHeroesItem key={antiheroe.name} antiheroe={antiheroe} cardSelected={cardSelected}/>
     )
   });
   

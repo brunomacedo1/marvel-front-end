@@ -1,11 +1,11 @@
 import React from 'react';
 import VillainsItem from '../CharacterItem/VillainsItem'
 
-const VillainsList = ({villains}) => {
+const VillainsList = ({villains, cardSelected}) => {
 
   const villainsList = villains.map((villain) => {
     return(
-      <VillainsItem key={villain.name} villain={villain}/>
+      <VillainsItem key={villain.name} villain={villain} cardSelected={cardSelected}/>
     )
   });
 
@@ -13,7 +13,7 @@ const VillainsList = ({villains}) => {
 
 
   return (
-    <div>
+    <section className="vilao">
       <div className="section">
         <p className="section-title">Vilões</p>
         <p className="see-all">Ver tudo</p>
@@ -21,7 +21,7 @@ const VillainsList = ({villains}) => {
       <div className="personagem-wrapper">
         {villainsList}
       </div>
-    </div>
+    </section>
   )
 }
 

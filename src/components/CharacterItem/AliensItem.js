@@ -1,10 +1,10 @@
 import React from 'react';
 import './Characters.css';
 
-const AliensItem = ({alien}) => {
+const AliensItem = ({alien, cardSelected }) => {
   return(
     
-    <div className="card">
+    <div className="card" onClick={() => cardSelected(alien)}>
       <img src={alien.imagePath} alt=""/>
       <div className="card-content">
         <p className="text-ego">{alien.alterEgo}</p>
