@@ -17,7 +17,7 @@ class App extends React.Component {
 
   //Função  onde é feita a requisição(GET) a api e muda os respectivos states com o que é retornado da api.
   renderList = async () => {
-    await axios.get('http://192.168.0.10:3000/api')
+    await axios.get('https://marvel-api-teste.herokuapp.com/api')
     .then((response) => {
       this.setState({heroes: response.data.heroes});
       this.setState({antiheroes: response.data.antiHeroes});
