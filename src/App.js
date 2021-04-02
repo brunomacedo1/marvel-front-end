@@ -1,15 +1,9 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import Navbar from './AppBar/AppBar.component';
-import AliensList from './CharacterList/AliensList';
-import HeroesList from './CharacterList/HeroesList';
-import HumansList from './CharacterList/HumansList';
-import VillainsList from './CharacterList/VillainsList';
-import AntiHeroesList from './CharacterList/AntiHeroesList';
-import Details from './Details/Details';
-import IconBar from './IconBar/IconBar.component';
-import Route from './Route';
-
+import Navbar from './components/AppBar/AppBar.component';
+import CharacterList from './components/CharacterList/CharacterList';
+import Details from './components/Details/Details';
+import IconBar from './components/IconBar/IconBar.component';
 
 const App = () => {
 
@@ -49,11 +43,11 @@ const App = () => {
             <p className="subtitle">Escolha o seu personagem</p>
           </div>
           <IconBar/>
-          <HeroesList heroes={data} cardSelected={onCardSelected} />
-          <VillainsList villains={data} cardSelected={onCardSelected} />
-          <AntiHeroesList antiheroes={data} cardSelected={onCardSelected} />
-          <AliensList aliens={data} cardSelected={onCardSelected} />
-          <HumansList humans={data} cardSelected={onCardSelected}/>
+          <CharacterList data={data.heroes} cardSelected={onCardSelected} />
+          <CharacterList data={data.villains} cardSelected={onCardSelected} />
+          <CharacterList data={data.antiHeroes} cardSelected={onCardSelected} />
+          <CharacterList data={data.aliens} cardSelected={onCardSelected} />
+          <CharacterList data={data.humans} cardSelected={onCardSelected} />
       </div>
     );
   } else {
