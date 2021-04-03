@@ -1,7 +1,7 @@
 import React from 'react';
 import CharacterCard from '../CharacterCard/CharacterCard';
 
-const CharacterList = ({data, cardSelected}) => {
+const CharacterList = ({data, cardSelected, section}) => {
 
   if (data) {
     const cardList = data.map((data) => {
@@ -13,7 +13,7 @@ const CharacterList = ({data, cardSelected}) => {
     return (
       <div>
         <div className="section">
-          <p className="section-title">Heróis</p>
+          <p className="section-title">{section}</p>
           <p className="see-all">Ver tudo</p>
         </div>
         <div className="personagem-wrapper">

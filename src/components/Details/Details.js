@@ -4,6 +4,7 @@ import {ReactComponent as Age} from "../../assets/icons/age.svg";
 import {ReactComponent as Height} from "../../assets/icons/height.svg"; 
 import {ReactComponent as Weight} from "../../assets/icons/weight.svg"; 
 import {ReactComponent as Universe} from "../../assets/icons/universe.svg"; 
+import {ReactComponent as BackArrow} from "../../assets/icons/back.svg"; 
 
 
 
@@ -15,6 +16,9 @@ const Details = ({data}) => {
   return (
     <div className="wrapper">
       <div className="details-container" style={{ backgroundImage: `url(${data.imagePath})`}} >
+        <a href="/">
+          <BackArrow/>
+        </a>
         <div className="details-hero">
           <p className="alterEgo">{data.alterEgo}</p>
           <p className="name">{data.name}</p>

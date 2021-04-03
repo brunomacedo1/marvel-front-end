@@ -13,6 +13,10 @@ html, body {
   background-position: center;
 }
 
+.details-hero{
+  margin-top: 100px;
+}
+
 .alterEgo{
   font-family: "Gilroy-Medium";
   font-size: 16px;

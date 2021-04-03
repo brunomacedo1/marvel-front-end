@@ -1,16 +1,29 @@
 import React from 'react';
 import './Characters.css';
 
-const characterCard = ({data, cardSelected}) => {
-  return(
+const characterCard = ({data, }) => {
+
+  const href = data.name.replace(' ', '-').replace(' ', '-').toLowerCase()
+
+  const onClick = (event) =>{
     
-    <div className="card" onClick={() => cardSelected(data)}>
-      <img src={data.imagePath} alt=""/>
-      <div className="card-content">
-        <p className="text-ego">{data.alterEgo}</p>
-        <p className="text-name">{data.name}</p> 
-      </div>   
-    </div>
+    if (event.metaKey || event.ctrlKey){
+      return;
+    }
+
+    event.preventDefault();
+    window.history.pushState({}, '', href);
+
+    const navEvent = new PopStateEvent('popstate');
+    window.dispatchEvent(navEvent);
+  };
+
+  return(
+    <a href={href} onClick={onClick}>
+      <div className="card">
+        <img src={data.imagePath} alt=""/>
+      </div>
+    </a>
   )
 }
 
